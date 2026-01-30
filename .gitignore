@@ -1,0 +1,13 @@
+# Ignore raw EEG data
+data/raw/
+
+# Ignore MATLAB files if accidentally copied
+*.mat
+
+# Ignore Jupyter artifacts
+.ipynb_checkpoints/
+__pycache__/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
