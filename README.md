@@ -34,6 +34,12 @@ Refer to `/architecture/system_arch.png` for the detailed diagram.
 
 Public P300 EEG datasets such as BNCI Horizon and BCI Competition III are used.
 
+### Data Handling
+Raw EEG datasets are not stored in this repository.
+Instructions to download and place the data locally
+are provided in `data/README.md`.
+
+
 ### Streaming Simulation
 
 Recorded EEG is replayed chunk-by-chunk to mimic live headset input.
