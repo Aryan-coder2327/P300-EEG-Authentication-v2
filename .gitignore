@@ -11,3 +11,5 @@ __pycache__/
 # Ignore OS files
 .DS_Store
 Thumbs.db
+data/preprocessed/*.npy
+data/preprocessed/*.json
