@@ -13,3 +13,15 @@ __pycache__/
 Thumbs.db
 data/preprocessed/*.npy
 data/preprocessed/*.json
+
+# Python virtual environment
+venv/
+
+# Generated preprocessed EEG sessions
+data/preprocessed_sessions/
+
+# Generated model result arrays
+*.npy
+
+# macOS metadata
+results/.DS_Store

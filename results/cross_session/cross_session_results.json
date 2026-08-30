@@ -1,0 +1,93 @@
+{
+    "configuration": {
+        "subjects": [
+            "A01",
+            "A02",
+            "A03",
+            "A04",
+            "A05",
+            "A06",
+            "A07",
+            "A08",
+            "A09",
+            "A10"
+        ],
+        "recordings": [
+            1,
+            2,
+            3
+        ],
+        "epochs_per_window": 10,
+        "authentication_method": "Cross-session cosine similarity"
+    },
+    "session_pair_results": [
+        {
+            "enrollment_recording": 1,
+            "test_recording": 2,
+            "eer": 0.4622367465504721,
+            "threshold": 0.05115850018562895,
+            "far": 0.46303558460421207,
+            "frr": 0.46143790849673205,
+            "genuine_samples": 1530,
+            "impostor_samples": 13770
+        },
+        {
+            "enrollment_recording": 1,
+            "test_recording": 3,
+            "eer": 0.47734204793028323,
+            "threshold": 0.028135355920787974,
+            "far": 0.4775599128540305,
+            "frr": 0.477124183006536,
+            "genuine_samples": 1530,
+            "impostor_samples": 13770
+        },
+        {
+            "enrollment_recording": 2,
+            "test_recording": 1,
+            "eer": 0.4747639796659404,
+            "threshold": 0.05831360420877463,
+            "far": 0.4737109658678286,
+            "frr": 0.47581699346405226,
+            "genuine_samples": 1530,
+            "impostor_samples": 13770
+        },
+        {
+            "enrollment_recording": 2,
+            "test_recording": 3,
+            "eer": 0.4880537400145243,
+            "threshold": 0.04925995826617402,
+            "far": 0.48917937545388523,
+            "frr": 0.4869281045751634,
+            "genuine_samples": 1530,
+            "impostor_samples": 13770
+        },
+        {
+            "enrollment_recording": 3,
+            "test_recording": 1,
+            "eer": 0.4746550472040668,
+            "threshold": 0.03278366325013904,
+            "far": 0.47414669571532314,
+            "frr": 0.47516339869281043,
+            "genuine_samples": 1530,
+            "impostor_samples": 13770
+        },
+        {
+            "enrollment_recording": 3,
+            "test_recording": 2,
+            "eer": 0.4652868554829339,
+            "threshold": 0.06879089404371252,
+            "far": 0.46652142338416847,
+            "frr": 0.46405228758169936,
+            "genuine_samples": 1530,
+            "impostor_samples": 13770
+        }
+    ],
+    "overall_result": {
+        "eer": 0.4738441055434519,
+        "threshold": 0.04766487019334642,
+        "far": 0.474158799322198,
+        "frr": 0.47352941176470587
+    },
+    "total_genuine_scores": 9180,
+    "total_impostor_scores": 82620
+}

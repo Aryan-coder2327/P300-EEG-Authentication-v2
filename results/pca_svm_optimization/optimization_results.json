@@ -1,0 +1,33 @@
+{
+  "method": "PCA + RBF SVM hyperparameter optimization",
+  "subjects": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A09",
+    "A10"
+  ],
+  "features": 224,
+  "epochs_per_window": 10,
+  "validation": {
+    "enrollment_recording": 1,
+    "recording": 2,
+    "eer": 0.13710965867828612
+  },
+  "selected_parameters": {
+    "pca_components": 100,
+    "C": 10.0,
+    "gamma": 0.001
+  },
+  "confirmation_test": {
+    "enrollment_recording": 1,
+    "test_recording": 3,
+    "eer": 0.1333333333333333,
+    "threshold": -0.6347161276981481
+  }
+}
