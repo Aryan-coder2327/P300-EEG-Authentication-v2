@@ -1,0 +1,67 @@
+{
+  "protocol": {
+    "enrollment_recording": 1,
+    "threshold_calibration_recording": 2,
+    "held_out_test_recording": 3,
+    "subjects": [
+      "A01",
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A06",
+      "A07",
+      "A08",
+      "A09",
+      "A10"
+    ],
+    "features_per_window": 224,
+    "epochs_per_window": 10,
+    "pca_components": 100,
+    "scaler_and_pca_fit_on": "Recording 1 only",
+    "threshold_selected_on": "Recording 2 only",
+    "test_threshold_reused_without_adjustment": true
+  },
+  "classifiers": {
+    "SVM": {
+      "validation_eer": 0.13710965867828612,
+      "validation_threshold": -0.6417622158887228,
+      "test_far_at_validation_threshold": 0.1345679012345679,
+      "test_frr_at_validation_threshold": 0.13202614379084968,
+      "test_eer_descriptive_only": 0.13344226579520696,
+      "test_eer_threshold_descriptive_only": -0.6349826128639684,
+      "test_genuine_score_count": 1530,
+      "test_impostor_score_count": 13770
+    },
+    "Logistic Regression": {
+      "validation_eer": 0.1261437908496732,
+      "validation_threshold": -2.0656264200897168,
+      "test_far_at_validation_threshold": 0.12135076252723312,
+      "test_frr_at_validation_threshold": 0.1437908496732026,
+      "test_eer_descriptive_only": 0.12933914306463323,
+      "test_eer_threshold_descriptive_only": -2.2532348358264436,
+      "test_genuine_score_count": 1530,
+      "test_impostor_score_count": 13770
+    },
+    "LDA": {
+      "validation_eer": 0.14386347131445174,
+      "validation_threshold": -1.5021184876487381,
+      "test_far_at_validation_threshold": 0.14175744371822804,
+      "test_frr_at_validation_threshold": 0.1326797385620915,
+      "test_eer_descriptive_only": 0.137037037037037,
+      "test_eer_threshold_descriptive_only": -1.385114615952495,
+      "test_genuine_score_count": 1530,
+      "test_impostor_score_count": 13770
+    },
+    "Random Forest": {
+      "validation_eer": 0.18442265795206975,
+      "validation_threshold": 0.10333333333333333,
+      "test_far_at_validation_threshold": 0.18562091503267975,
+      "test_frr_at_validation_threshold": 0.16862745098039217,
+      "test_eer_descriptive_only": 0.1778867102396514,
+      "test_eer_threshold_descriptive_only": 0.10666666666666667,
+      "test_genuine_score_count": 1530,
+      "test_impostor_score_count": 13770
+    }
+  }
+}

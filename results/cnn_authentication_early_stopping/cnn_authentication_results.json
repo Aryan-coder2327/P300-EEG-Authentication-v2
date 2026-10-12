@@ -1,0 +1,154 @@
+{
+  "method": "1D-CNN on averaged raw EEG windows",
+  "input_shape_per_window": [
+    16,
+    256
+  ],
+  "subjects": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A09",
+    "A10"
+  ],
+  "enrollment_recording": 1,
+  "threshold_calibration_recording": 2,
+  "held_out_test_recording": 3,
+  "epochs_per_window": 10,
+  "training_epochs": 20,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "seed": 42,
+  "device": "cpu",
+  "validation_eer_mean_across_subjects": 0.03965141612200436,
+  "validation_thresholds_by_subject": {
+    "A01": 0.8775644898414612,
+    "A02": 0.3426803648471832,
+    "A03": 0.5267769694328308,
+    "A04": 2.7844510078430176,
+    "A05": 0.4097166359424591,
+    "A06": 4.855802536010742,
+    "A07": 0.5859857201576233,
+    "A08": -1.4047317504882812,
+    "A09": 1.426742434501648,
+    "A10": 0.9684004187583923
+  },
+  "test_far_at_subject_validation_thresholds": 0.03638344226579521,
+  "test_frr_at_subject_validation_thresholds": 0.07516339869281045,
+  "test_eer_mean_descriptive_only": 0.0485838779956427,
+  "test_genuine_score_count": 1530,
+  "test_impostor_score_count": 13770,
+  "threshold_protocol": "Each subject's threshold is calibrated using Recording 2 and frozen for Recording 3.",
+  "test_eer_note": "Descriptive only. Test labels are used to calculate test EER and do not determine operating thresholds.",
+  "preprocessing": "Channel-wise normalization statistics fitted on Recording 1 only; applied unchanged to Recordings 2 and 3.",
+  "saved_model_directory": "/Users/aryantripathi/Desktop/P300-EEG-Authentication/results/cnn_authentication_early_stopping/saved_models",
+  "loss_history_file": "/Users/aryantripathi/Desktop/P300-EEG-Authentication/results/cnn_authentication_early_stopping/loss_history.json",
+  "loss_plot_file": "/Users/aryantripathi/Desktop/P300-EEG-Authentication/results/cnn_authentication_early_stopping/plots/cnn_loss_curves.png",
+  "per_subject_results": [
+    {
+      "subject": "A01",
+      "validation_eer": 0.03231663035584604,
+      "validation_threshold": 0.8775644898414612,
+      "test_far_at_validation_threshold": 0.02251270878721859,
+      "test_frr_at_validation_threshold": 0.0718954248366013,
+      "test_eer_descriptive_only": 0.03667392883079157,
+      "test_genuine_count": 153,
+      "test_impostor_count": 1377
+    },
+    {
+      "subject": "A02",
+      "validation_eer": 0.0018155410312273058,
+      "validation_threshold": 0.3426803648471832,
+      "test_far_at_validation_threshold": 0.0014524328249818446,
+      "test_frr_at_validation_threshold": 0.0196078431372549,
+      "test_eer_descriptive_only": 0.002178649237472767,
+      "test_genuine_count": 153,
+      "test_impostor_count": 1377
+    },
+    {
+      "subject": "A03",
+      "validation_eer": 0.10929557007988383,
+      "validation_threshold": 0.5267769694328308,
+      "test_far_at_validation_threshold": 0.140159767610748,
+      "test_frr_at_validation_threshold": 0.17647058823529413,
+      "test_eer_descriptive_only": 0.1644880174291939,
+      "test_genuine_count": 153,
+      "test_impostor_count": 1377
+    },
+    {
+      "subject": "A04",
+      "validation_eer": 0.0,
+      "validation_threshold": 2.7844510078430176,
+      "test_far_at_validation_threshold": 0.0,
+      "test_frr_at_validation_threshold": 0.026143790849673203,
+      "test_eer_descriptive_only": 0.0010893246187363835,
+      "test_genuine_count": 153,
+      "test_impostor_count": 1377
+    },
+    {
+      "subject": "A05",
+      "validation_eer": 0.09186637618010168,
+      "validation_threshold": 0.4097166359424591,
+      "test_far_at_validation_threshold": 0.09731299927378359,
+      "test_frr_at_validation_threshold": 0.17647058823529413,
+      "test_eer_descriptive_only": 0.12345679012345678,
+      "test_genuine_count": 153,
+      "test_impostor_count": 1377
+    },
+    {
+      "subject": "A06",
+      "validation_eer": 0.0,
+      "validation_threshold": 4.855802536010742,
+      "test_far_at_validation_threshold": 0.0,
+      "test_frr_at_validation_threshold": 0.0,
+      "test_eer_descriptive_only": 0.0,
+      "test_genuine_count": 153,
+      "test_impostor_count": 1377
+    },
+    {
+      "subject": "A07",
+      "validation_eer": 0.03013798111837327,
+      "validation_threshold": 0.5859857201576233,
+      "test_far_at_validation_threshold": 0.0196078431372549,
+      "test_frr_at_validation_threshold": 0.0457516339869281,
+      "test_eer_descriptive_only": 0.035584604212055185,
+      "test_genuine_count": 153,
+      "test_impostor_count": 1377
+    },
+    {
+      "subject": "A08",
+      "validation_eer": 0.09694989106753812,
+      "validation_threshold": -1.4047317504882812,
+      "test_far_at_validation_threshold": 0.053013798111837325,
+      "test_frr_at_validation_threshold": 0.08496732026143791,
+      "test_eer_descriptive_only": 0.065359477124183,
+      "test_genuine_count": 153,
+      "test_impostor_count": 1377
+    },
+    {
+      "subject": "A09",
+      "validation_eer": 0.006172839506172828,
+      "validation_threshold": 1.426742434501648,
+      "test_far_at_validation_threshold": 0.005809731299927378,
+      "test_frr_at_validation_threshold": 0.0392156862745098,
+      "test_eer_descriptive_only": 0.018881626724764,
+      "test_genuine_count": 153,
+      "test_impostor_count": 1377
+    },
+    {
+      "subject": "A10",
+      "validation_eer": 0.027959331880900516,
+      "validation_threshold": 0.9684004187583923,
+      "test_far_at_validation_threshold": 0.023965141612200435,
+      "test_frr_at_validation_threshold": 0.1111111111111111,
+      "test_eer_descriptive_only": 0.038126361655773405,
+      "test_genuine_count": 153,
+      "test_impostor_count": 1377
+    }
+  ]
+}

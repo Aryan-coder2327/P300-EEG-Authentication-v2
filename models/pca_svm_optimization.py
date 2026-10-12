@@ -819,6 +819,26 @@ test_eer, test_threshold = compute_eer(
     impostor
 )
 
+# Calibrate the authentication threshold on validation Recording 2.
+X_validation, y_validation = get_dataset(VALIDATION_RECORDING)
+
+validation_genuine, validation_impostor = get_scores(
+    X_validation,
+    y_validation,
+    scaler,
+    pca,
+    models
+)
+
+validation_eer, validation_threshold = compute_eer(
+    validation_genuine,
+    validation_impostor
+)
+
+# Evaluate the unseen test recording using the fixed validation threshold.
+test_far = float(np.mean(impostor >= validation_threshold))
+test_frr = float(np.mean(genuine < validation_threshold))
+
 
 print(
     "\nCONFIRMATION RESULT"
@@ -915,8 +935,17 @@ final_results = {
         "eer":
             test_eer,
 
-        "threshold":
-            test_threshold
+        "eer_threshold_from_test":
+            test_threshold,
+
+        "validation_threshold":
+            validation_threshold,
+
+        "test_far_at_validation_threshold":
+            test_far,
+
+        "test_frr_at_validation_threshold":
+            test_frr
     }
 }
 

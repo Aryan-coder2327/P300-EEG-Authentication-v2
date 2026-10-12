@@ -28,6 +28,9 @@
     "enrollment_recording": 1,
     "test_recording": 3,
     "eer": 0.1333333333333333,
-    "threshold": -0.6347161276981481
+    "eer_threshold_from_test": -0.6347161276981481,
+    "validation_threshold": -0.6417622158887228,
+    "test_far_at_validation_threshold": 0.1345679012345679,
+    "test_frr_at_validation_threshold": 0.13202614379084968
   }
 }

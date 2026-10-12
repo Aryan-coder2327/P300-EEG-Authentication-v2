@@ -1,0 +1,445 @@
+{
+  "protocol": {
+    "enrollment_recording": 1,
+    "threshold_calibration_recording": 2,
+    "held_out_test_recording": 3,
+    "thresholds": "One independently calibrated threshold per claimed subject",
+    "scaler_and_pca_fit_on": "Recording 1 only",
+    "test_selected_thresholds_used_for_operating_metrics": false,
+    "note": "Classifiers use the same 224 engineered features and PCA pipeline. Hyperparameter tuning is not equally exhaustive across classifiers."
+  },
+  "classifiers": {
+    "SVM": {
+      "validation_eer_mean_across_subjects": 0.13685548293391428,
+      "test_far_at_subject_validation_thresholds": 0.14139433551198258,
+      "test_frr_at_subject_validation_thresholds": 0.13529411764705881,
+      "test_eer_mean_descriptive_only": 0.13874364560639071,
+      "per_subject": [
+        {
+          "subject": "A01",
+          "validation_eer": 0.09368191721132899,
+          "validation_threshold": -0.6109269374912434,
+          "test_far_at_validation_threshold": 0.12563543936092955,
+          "test_frr_at_validation_threshold": 0.1111111111111111,
+          "test_eer_descriptive_only": 0.12309368191721133,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A02",
+          "validation_eer": 0.20733478576615832,
+          "validation_threshold": -0.8291758180529767,
+          "test_far_at_validation_threshold": 0.18155410312273057,
+          "test_frr_at_validation_threshold": 0.17647058823529413,
+          "test_eer_descriptive_only": 0.17574437182280322,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A03",
+          "validation_eer": 0.15032679738562094,
+          "validation_threshold": -1.3671465614115605,
+          "test_far_at_validation_threshold": 0.19389978213507625,
+          "test_frr_at_validation_threshold": 0.24836601307189543,
+          "test_eer_descriptive_only": 0.24255628177196806,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A04",
+          "validation_eer": 0.19753086419753085,
+          "validation_threshold": -0.640247088425713,
+          "test_far_at_validation_threshold": 0.15177923021060277,
+          "test_frr_at_validation_threshold": 0.1503267973856209,
+          "test_eer_descriptive_only": 0.14705882352941177,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A05",
+          "validation_eer": 0.1822803195352215,
+          "validation_threshold": -0.633395307186083,
+          "test_far_at_validation_threshold": 0.1786492374727669,
+          "test_frr_at_validation_threshold": 0.13071895424836602,
+          "test_eer_descriptive_only": 0.1626724763979666,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A06",
+          "validation_eer": 0.09731299927378359,
+          "validation_threshold": 0.17466147079875682,
+          "test_far_at_validation_threshold": 0.08714596949891068,
+          "test_frr_at_validation_threshold": 0.13725490196078433,
+          "test_eer_descriptive_only": 0.11111111111111113,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A07",
+          "validation_eer": 0.13652868554829337,
+          "validation_threshold": -0.6134539323218684,
+          "test_far_at_validation_threshold": 0.15613652868554828,
+          "test_frr_at_validation_threshold": 0.19607843137254902,
+          "test_eer_descriptive_only": 0.19099491648511258,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A08",
+          "validation_eer": 0.1750181554103123,
+          "validation_threshold": -0.967580705258579,
+          "test_far_at_validation_threshold": 0.1859114015976761,
+          "test_frr_at_validation_threshold": 0.0718954248366013,
+          "test_eer_descriptive_only": 0.10566448801742923,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A09",
+          "validation_eer": 0.10421205519244733,
+          "validation_threshold": -0.5608076840741103,
+          "test_far_at_validation_threshold": 0.11546840958605664,
+          "test_frr_at_validation_threshold": 0.0457516339869281,
+          "test_eer_descriptive_only": 0.07516339869281044,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A10",
+          "validation_eer": 0.024328249818445905,
+          "validation_threshold": -0.15423495381935348,
+          "test_far_at_validation_threshold": 0.03776325344952796,
+          "test_frr_at_validation_threshold": 0.08496732026143791,
+          "test_eer_descriptive_only": 0.05337690631808281,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        }
+      ]
+    },
+    "Logistic Regression": {
+      "validation_eer_mean_across_subjects": 0.11978939724037765,
+      "test_far_at_subject_validation_thresholds": 0.12381989832970225,
+      "test_frr_at_subject_validation_thresholds": 0.15294117647058825,
+      "test_eer_mean_descriptive_only": 0.1331517792302106,
+      "per_subject": [
+        {
+          "subject": "A01",
+          "validation_eer": 0.08641975308641978,
+          "validation_threshold": -2.0740165760399742,
+          "test_far_at_validation_threshold": 0.11546840958605664,
+          "test_frr_at_validation_threshold": 0.09803921568627451,
+          "test_eer_descriptive_only": 0.1096586782861293,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A02",
+          "validation_eer": 0.088961510530138,
+          "validation_threshold": -1.3416398739783926,
+          "test_far_at_validation_threshold": 0.11183732752360204,
+          "test_frr_at_validation_threshold": 0.3006535947712418,
+          "test_eer_descriptive_only": 0.17755991285403053,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A03",
+          "validation_eer": 0.0769789397240378,
+          "validation_threshold": -3.1779442284376485,
+          "test_far_at_validation_threshold": 0.09222948438634714,
+          "test_frr_at_validation_threshold": 0.20915032679738563,
+          "test_eer_descriptive_only": 0.17937545388525783,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A04",
+          "validation_eer": 0.23529411764705885,
+          "validation_threshold": -2.762514031179392,
+          "test_far_at_validation_threshold": 0.17356572258533043,
+          "test_frr_at_validation_threshold": 0.20915032679738563,
+          "test_eer_descriptive_only": 0.2026143790849673,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A05",
+          "validation_eer": 0.16920842411038486,
+          "validation_threshold": -1.7857017140011742,
+          "test_far_at_validation_threshold": 0.1655773420479303,
+          "test_frr_at_validation_threshold": 0.24183006535947713,
+          "test_eer_descriptive_only": 0.1833696441539579,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A06",
+          "validation_eer": 0.12381989832970225,
+          "validation_threshold": 0.44128491620828303,
+          "test_far_at_validation_threshold": 0.09513435003631082,
+          "test_frr_at_validation_threshold": 0.1568627450980392,
+          "test_eer_descriptive_only": 0.11655773420479304,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A07",
+          "validation_eer": 0.14379084967320263,
+          "validation_threshold": -2.560413327921702,
+          "test_far_at_validation_threshold": 0.15541031227305738,
+          "test_frr_at_validation_threshold": 0.1111111111111111,
+          "test_eer_descriptive_only": 0.1328976034858388,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A08",
+          "validation_eer": 0.15649963689179375,
+          "validation_threshold": -4.3159139209762625,
+          "test_far_at_validation_threshold": 0.17138707334785766,
+          "test_frr_at_validation_threshold": 0.06535947712418301,
+          "test_eer_descriptive_only": 0.1114742193173566,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A09",
+          "validation_eer": 0.09041394335511983,
+          "validation_threshold": -1.5153376123430204,
+          "test_far_at_validation_threshold": 0.11038489469862019,
+          "test_frr_at_validation_threshold": 0.006535947712418301,
+          "test_eer_descriptive_only": 0.05192447349310096,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A10",
+          "validation_eer": 0.026506899055918673,
+          "validation_threshold": -1.826149111900504,
+          "test_far_at_validation_threshold": 0.04720406681190995,
+          "test_frr_at_validation_threshold": 0.13071895424836602,
+          "test_eer_descriptive_only": 0.06608569353667393,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        }
+      ]
+    },
+    "LDA": {
+      "validation_eer_mean_across_subjects": 0.1264342774146696,
+      "test_far_at_subject_validation_thresholds": 0.13217138707334786,
+      "test_frr_at_subject_validation_thresholds": 0.1477124183006536,
+      "test_eer_mean_descriptive_only": 0.12886710239651414,
+      "per_subject": [
+        {
+          "subject": "A01",
+          "validation_eer": 0.11474219317356574,
+          "validation_threshold": -1.9260486362411573,
+          "test_far_at_validation_threshold": 0.13798111837327523,
+          "test_frr_at_validation_threshold": 0.1111111111111111,
+          "test_eer_descriptive_only": 0.11909949164851127,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A02",
+          "validation_eer": 0.04793028322440089,
+          "validation_threshold": 2.3279618582149357,
+          "test_far_at_validation_threshold": 0.037037037037037035,
+          "test_frr_at_validation_threshold": 0.2875816993464052,
+          "test_eer_descriptive_only": 0.09694989106753812,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A03",
+          "validation_eer": 0.05809731299927379,
+          "validation_threshold": -3.437502428707509,
+          "test_far_at_validation_threshold": 0.09005083514887437,
+          "test_frr_at_validation_threshold": 0.10457516339869281,
+          "test_eer_descriptive_only": 0.09767610748002904,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A04",
+          "validation_eer": 0.27196804647785044,
+          "validation_threshold": -2.8041685823311004,
+          "test_far_at_validation_threshold": 0.23965141612200436,
+          "test_frr_at_validation_threshold": 0.2222222222222222,
+          "test_eer_descriptive_only": 0.23420479302832242,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A05",
+          "validation_eer": 0.18010167029774876,
+          "validation_threshold": -1.4265904735064994,
+          "test_far_at_validation_threshold": 0.17501815541031226,
+          "test_frr_at_validation_threshold": 0.22875816993464052,
+          "test_eer_descriptive_only": 0.19535221496005808,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A06",
+          "validation_eer": 0.12926652142338416,
+          "validation_threshold": 0.6648625492722329,
+          "test_far_at_validation_threshold": 0.12418300653594772,
+          "test_frr_at_validation_threshold": 0.1895424836601307,
+          "test_eer_descriptive_only": 0.14524328249818447,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A07",
+          "validation_eer": 0.154320987654321,
+          "validation_threshold": -1.1235118490223943,
+          "test_far_at_validation_threshold": 0.16702977487291212,
+          "test_frr_at_validation_threshold": 0.1437908496732026,
+          "test_eer_descriptive_only": 0.15867828612926652,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A08",
+          "validation_eer": 0.1579520697167756,
+          "validation_threshold": -15.436538390027613,
+          "test_far_at_validation_threshold": 0.16049382716049382,
+          "test_frr_at_validation_threshold": 0.058823529411764705,
+          "test_eer_descriptive_only": 0.1045751633986928,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A09",
+          "validation_eer": 0.09114015976761075,
+          "validation_threshold": -1.9502378888985579,
+          "test_far_at_validation_threshold": 0.12563543936092955,
+          "test_frr_at_validation_threshold": 0.0,
+          "test_eer_descriptive_only": 0.045388525780682615,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A10",
+          "validation_eer": 0.05882352941176471,
+          "validation_threshold": -0.3287266602618111,
+          "test_far_at_validation_threshold": 0.06463326071169208,
+          "test_frr_at_validation_threshold": 0.13071895424836602,
+          "test_eer_descriptive_only": 0.09150326797385622,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        }
+      ]
+    },
+    "Random Forest": {
+      "validation_eer_mean_across_subjects": 0.16122004357298475,
+      "test_far_at_subject_validation_thresholds": 0.16216412490922294,
+      "test_frr_at_subject_validation_thresholds": 0.18235294117647058,
+      "test_eer_mean_descriptive_only": 0.17091503267973857,
+      "per_subject": [
+        {
+          "subject": "A01",
+          "validation_eer": 0.1114742193173566,
+          "validation_threshold": 0.12333333333333334,
+          "test_far_at_validation_threshold": 0.14451706608569354,
+          "test_frr_at_validation_threshold": 0.10457516339869281,
+          "test_eer_descriptive_only": 0.11873638344226581,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A02",
+          "validation_eer": 0.29520697167755994,
+          "validation_threshold": 0.08666666666666667,
+          "test_far_at_validation_threshold": 0.27596223674655046,
+          "test_frr_at_validation_threshold": 0.29411764705882354,
+          "test_eer_descriptive_only": 0.285039941902687,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A03",
+          "validation_eer": 0.09513435003631082,
+          "validation_threshold": 0.11333333333333333,
+          "test_far_at_validation_threshold": 0.1270878721859114,
+          "test_frr_at_validation_threshold": 0.21568627450980393,
+          "test_eer_descriptive_only": 0.16920842411038492,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A04",
+          "validation_eer": 0.16920842411038492,
+          "validation_threshold": 0.11666666666666667,
+          "test_far_at_validation_threshold": 0.15541031227305738,
+          "test_frr_at_validation_threshold": 0.2875816993464052,
+          "test_eer_descriptive_only": 0.21931735657225854,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A05",
+          "validation_eer": 0.2033405954974582,
+          "validation_threshold": 0.10333333333333333,
+          "test_far_at_validation_threshold": 0.18082788671023964,
+          "test_frr_at_validation_threshold": 0.26143790849673204,
+          "test_eer_descriptive_only": 0.24074074074074076,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A06",
+          "validation_eer": 0.13834422657952067,
+          "validation_threshold": 0.11333333333333333,
+          "test_far_at_validation_threshold": 0.10820624546114742,
+          "test_frr_at_validation_threshold": 0.09803921568627451,
+          "test_eer_descriptive_only": 0.10312273057371096,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A07",
+          "validation_eer": 0.16303558460421202,
+          "validation_threshold": 0.08666666666666667,
+          "test_far_at_validation_threshold": 0.16993464052287582,
+          "test_frr_at_validation_threshold": 0.16993464052287582,
+          "test_eer_descriptive_only": 0.1699346405228758,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A08",
+          "validation_eer": 0.2639796659404503,
+          "validation_threshold": 0.10333333333333333,
+          "test_far_at_validation_threshold": 0.28104575163398693,
+          "test_frr_at_validation_threshold": 0.1437908496732026,
+          "test_eer_descriptive_only": 0.20079883805374,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A09",
+          "validation_eer": 0.09876543209876543,
+          "validation_threshold": 0.13,
+          "test_far_at_validation_threshold": 0.11328976034858387,
+          "test_frr_at_validation_threshold": 0.05228758169934641,
+          "test_eer_descriptive_only": 0.08714596949891068,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        },
+        {
+          "subject": "A10",
+          "validation_eer": 0.07371096586782863,
+          "validation_threshold": 0.14333333333333334,
+          "test_far_at_validation_threshold": 0.06535947712418301,
+          "test_frr_at_validation_threshold": 0.19607843137254902,
+          "test_eer_descriptive_only": 0.1151053013798112,
+          "test_genuine_count": 153,
+          "test_impostor_count": 1377
+        }
+      ]
+    }
+  }
+}
