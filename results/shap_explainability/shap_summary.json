@@ -1,0 +1,126 @@
+{
+  "method": "SHAP GradientExplainer",
+  "model": "Saved early-stopping subject-specific 1D-CNN",
+  "output_explained": "CNN logit",
+  "background_recording": 1,
+  "explained_recording": 3,
+  "background_size": 16,
+  "samples_per_class_per_subject": 10,
+  "shap_nsamples": 50,
+  "total_explained_samples": 200,
+  "top_channels": [
+    {
+      "channel": "CP3",
+      "mean_absolute_shap": 0.041439663618803024,
+      "mean_signed_shap": 0.0019975306931883097
+    },
+    {
+      "channel": "C3",
+      "mean_absolute_shap": 0.035566531121730804,
+      "mean_signed_shap": 0.0021823605056852102
+    },
+    {
+      "channel": "Pz",
+      "mean_absolute_shap": 0.033385951071977615,
+      "mean_signed_shap": 0.004376647528260946
+    },
+    {
+      "channel": "FCz",
+      "mean_absolute_shap": 0.033212896436452866,
+      "mean_signed_shap": 0.0013112283777445555
+    },
+    {
+      "channel": "P3",
+      "mean_absolute_shap": 0.03276829048991203,
+      "mean_signed_shap": 0.0011870652670040727
+    }
+  ],
+  "subject_summaries": [
+    {
+      "subject": "A01",
+      "samples_explained": 20,
+      "genuine_samples": 10,
+      "impostor_samples": 10,
+      "mean_absolute_shap": 0.03992502763867378,
+      "validation_threshold": 0.8775644898414612
+    },
+    {
+      "subject": "A02",
+      "samples_explained": 20,
+      "genuine_samples": 10,
+      "impostor_samples": 10,
+      "mean_absolute_shap": 0.03336667641997337,
+      "validation_threshold": 0.3426803648471832
+    },
+    {
+      "subject": "A03",
+      "samples_explained": 20,
+      "genuine_samples": 10,
+      "impostor_samples": 10,
+      "mean_absolute_shap": 0.014538954012095928,
+      "validation_threshold": 0.5267769694328308
+    },
+    {
+      "subject": "A04",
+      "samples_explained": 20,
+      "genuine_samples": 10,
+      "impostor_samples": 10,
+      "mean_absolute_shap": 0.033964138478040695,
+      "validation_threshold": 2.7844510078430176
+    },
+    {
+      "subject": "A05",
+      "samples_explained": 20,
+      "genuine_samples": 10,
+      "impostor_samples": 10,
+      "mean_absolute_shap": 0.025041449815034866,
+      "validation_threshold": 0.4097166359424591
+    },
+    {
+      "subject": "A06",
+      "samples_explained": 20,
+      "genuine_samples": 10,
+      "impostor_samples": 10,
+      "mean_absolute_shap": 0.02044694684445858,
+      "validation_threshold": 4.855802536010742
+    },
+    {
+      "subject": "A07",
+      "samples_explained": 20,
+      "genuine_samples": 10,
+      "impostor_samples": 10,
+      "mean_absolute_shap": 0.025943666696548462,
+      "validation_threshold": 0.5859857201576233
+    },
+    {
+      "subject": "A08",
+      "samples_explained": 20,
+      "genuine_samples": 10,
+      "impostor_samples": 10,
+      "mean_absolute_shap": 0.02279595658183098,
+      "validation_threshold": -1.4047317504882812
+    },
+    {
+      "subject": "A09",
+      "samples_explained": 20,
+      "genuine_samples": 10,
+      "impostor_samples": 10,
+      "mean_absolute_shap": 0.03846254199743271,
+      "validation_threshold": 1.426742434501648
+    },
+    {
+      "subject": "A10",
+      "samples_explained": 20,
+      "genuine_samples": 10,
+      "impostor_samples": 10,
+      "mean_absolute_shap": 0.012387731112539768,
+      "validation_threshold": 0.9684004187583923
+    }
+  ],
+  "limitations": [
+    "Attributions are model explanations, not causal evidence.",
+    "The output explained is a logit, not a calibrated probability.",
+    "Recording 3 explanations are post-hoc and do not tune the model.",
+    "Genuine/impostor groups and subjects may differ."
+  ]
+}

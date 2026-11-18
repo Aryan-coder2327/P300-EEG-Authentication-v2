@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "author": "Aryan",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -10,
+      "left": 190,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "servo1:GND", "esp:GND.2", "black", [ "h-20" ] ],
+    [ "servo1:V+", "esp:VIN", "red", [ "h-30", "v90", "h-260" ] ],
+    [ "servo1:PWM", "esp:D18", "orange", [ "h-40" ] ]
+  ],
+  "dependencies": {}
+}

@@ -25,3 +25,22 @@ data/preprocessed_sessions/
 
 # macOS metadata
 results/.DS_Store
+
+# Local backups
+backups/
+*.backup
+*.pre-*-backup
+*_backup.py
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary files
+*.log
+results/gui/enrolled_templates.json
